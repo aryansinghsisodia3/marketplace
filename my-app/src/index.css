@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.nav-bar li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.nav-bar li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.nav-bar li a:hover {
+  background-color: #000000;
+}

@@ -1,0 +1,176 @@
+.market-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.market-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.market-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-filter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.search-filter input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.search-filter select {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #333;
+}
+
+.price-sort-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.price-sort-filters select {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #333;
+  min-width: 150px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #7f8dcd 0%, #b1b1b1 50%, #8ed38d 100%);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-info h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-category {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  color: hsla(0, 0%, 20%, 0.9);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.product-rating {
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.product-rating span {
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.product-price {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .market-header h1 {
+    font-size: 2rem;
+  }
+
+  .filters-container {
+    flex-direction: column;
+  }
+
+  .search-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .price-sort-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-sort-filters select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
